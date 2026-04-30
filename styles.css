@@ -1,0 +1,139 @@
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+.quote-display {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 20px;
+    padding: 40px 30px;
+    margin: 40px 0;
+    min-height: 120px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+
+#quote-text {
+    font-size: 22px;
+    color: #2c3e50;
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#new-quote-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#new-quote-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+}
+
+.submit-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.submit-section h2 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+#user-quote-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#user-quote-input:focus {
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+}
+
+#submit-quote-btn {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+    color: white;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#submit-quote-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+}
+
+#user-name-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#user-name-input:focus {
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+}
+
