@@ -12,8 +12,46 @@ function displayRandomQuote() {
 document.getElementById("new-quote-btn").addEventListener("click", displayRandomQuote);
 
     // Your code will go here to:
+
     // 1. Pick a random number
+
     // 2. Get a quote from the array
+
     // 3. Display it on the page
+    function displayRandomQuote() {
+    let randomNumber = Math.floor(Math.random() * quotes.length);
+    let selectedQuote = quotes[randomNumber];
+    let quoteElement = document.getElementById("quote-text");
+    quoteElement.innerText = '"' + selectedQuote.text + '" - ' + selectedQuote.author;
 }
 
+}
+
+function submitUserQuote() {
+    let userName = document.getElementById("user-name-input").value;
+    let userQuote = document.getElementById("user-quote-input").value;
+    
+    // Check if the quote field has text
+    if (userQuote.trim() !== "") {
+        // Create a new quote object
+        let newQuote = {
+            text: userQuote,
+            author: userName || "Anonymous"
+        };
+        
+        // Add it to the quotes array
+        quotes.push(newQuote);
+        
+        // Clear the input fields
+        document.getElementById("user-name-input").value = "";
+        document.getElementById("user-quote-input").value = "";
+        
+        alert("Quote added successfully!");
+    } else {
+        alert("Please enter a quote!");
+    }
+}
+
+// Step 3 & 5: Event listeners (put these at the end)
+document.getElementById("new-quote-btn").addEventListener("click", displayRandomQuote);
+document.getElementById("submit-quote-btn").addEventListener("click", submitUserQuote);
