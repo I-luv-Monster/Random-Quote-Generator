@@ -41,6 +41,9 @@ function submitUserQuote() {
         
         // Add it to the quotes array
         quotes.push(newQuote);
+
+        // Save all quotes to local storage
+        localStorage.setItem("savedQuotes", JSON.stringify(quotes));
         
         // Clear the input fields
         document.getElementById("user-name-input").value = "";
@@ -51,6 +54,16 @@ function submitUserQuote() {
         alert("Please enter a quote!");
     }
 }
+
+function loadSavedQuotes() {
+    let savedQuotes = localStorage.getItem("savedQuotes");
+    if (savedQuotes) {
+        quotes = JSON.parse(savedQuotes);
+    }
+}
+
+// Load saved quotes when page opens
+loadSavedQuotes();
 
 // Step 3 & 5: Event listeners (put these at the end)
 document.getElementById("new-quote-btn").addEventListener("click", displayRandomQuote);
