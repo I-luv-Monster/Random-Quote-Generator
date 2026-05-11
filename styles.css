@@ -137,3 +137,7 @@ h1 {
     transform: scale(1.02);
 }
 
+.name {
+    margin-left: 1100px;
+    margin-top: -85px;
+}

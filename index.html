@@ -1,29 +1,74 @@
 <!DOCTYPE html>
+<!-- Tells the browser this is an HTML5 document -->
+
 <html lang="en">
+<!-- The root element of the page, language is set to English -->
+
 <head>
+    <!-- The head section contains information about the page, not visible content -->
+    
     <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 so special characters display correctly -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive on mobile devices by setting the viewport -->
+    
     <title>Random Quote Generator</title>
+    <!-- The text that appears in the browser tab -->
+    
     <link rel="stylesheet" href="styles.css">
+    <!-- Links the external CSS file to style this HTML page -->
 </head>
+
 <body>
+    <!-- The body contains all visible content on the page -->
     <div class="container">
-        <h1>Random Quote Generator</h1>
+        <!-- Main container that holds all the content, styled with CSS class "container" -->
+         
+        <div class="name">
+         <h1>AAVIII</h1>
+        </div>
         
+        <h1>Random Quote Generator</h1>
+        <!-- Main heading at the top of the page -->
+
         <div class="quote-display">
+            <!-- Container for displaying the quote, styled with CSS class "quote-display" -->
+            
             <p id="quote-text">Click the button to get an inspirational quote!</p>
+            <!-- Paragraph element that shows the quote text -->
+            <!-- The id "quote-text" is used by JavaScript to update this element -->
         </div>
         
         <button id="new-quote-btn">Get New Quote</button>
+        <!-- Button that users click to display a random quote -->
+        <!-- The id "new-quote-btn" is used by JavaScript to add a click event -->
         
         <div class="submit-section">
+            <!-- Container for the quote submission form, styled with CSS class "submit-section" -->
+            
             <h2>Add Your Own Quote</h2>
+            <!-- Secondary heading for the submission section -->
+            
             <input type="text" id="user-name-input" placeholder="Your name (optional)">
+            <!-- Text input field where users type their name -->
+            <!-- The id "user-name-input" is used by JavaScript to get the entered name -->
+            <!-- Placeholder text shows a hint inside the field -->
+            
             <input type="text" id="user-quote-input" placeholder="Enter your inspirational quote here...">
+            <!-- Text input field where users type their quote -->
+            <!-- The id "user-quote-input" is used by JavaScript to get the entered quote -->
+            <!-- Placeholder text shows a hint inside the field -->
+            
             <button id="submit-quote-btn">Submit Quote</button>
+            <!-- Button that users click to save their quote -->
+            <!-- The id "submit-quote-btn" is used by JavaScript to add a click event -->
         </div>
     </div>
 
     <script src="script.js"></script>
+    <!-- Links the external JavaScript file that makes the page interactive -->
+    <!-- Placed at the end so HTML loads before JavaScript runs -->
 </body>
+
 </html>
